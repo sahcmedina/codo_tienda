@@ -1,0 +1,102 @@
+*{
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box; /* para que las cajas no se desborden */
+}
+
+.padre{
+	display: flex;
+	flex-flow: column nowrap; 
+}
+	.header{
+		background: #000;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		.menu{
+			background: #2d4059;
+			display: flex;
+			flex-flow: row nowrap; /* se muestra en una misma linea */
+			height: 100px;
+			align-items: center;
+		}
+			.logo{
+				background: #ea5455;
+				flex: 1 1 auto;
+				height: 50px;
+			}		
+			.nav{
+				background: #ea5455;
+				flex: 1 1 auto;
+				height: 50px;
+			}
+			.social{
+				background: #ea5455;
+				flex: 1 1 auto;
+				height: 50px;
+			}
+		.texto-principal{
+			background: #f07b3f;
+		}
+			h1{
+				background: #ffd460;
+			}
+	.section{
+		background: #000;
+		display: flex;
+	}
+		.articulos{
+			background: #4e4e6a;
+			flex: 2 1 auto;
+			display: flex; 
+			flex-flow: wrap /* cada articulo al lado del otro */
+		}
+			.article{
+				background: #1f6cb0;
+				flex: 1 1 40%;
+			}
+			.navegacion{
+				background: #70a3c4;
+				flex: 1 1 100%;
+			}
+		.aside{
+			background: #f73f52;			
+			flex: 1 1 auto;
+		}
+			.publicidad{
+				background: #ffea85;
+			}
+	.footer{
+		background: #000;
+		display: flex;
+		justify-content: center;
+	}
+	.pie{
+		background: #e6af2e;
+		width: 300px;
+	}
+
+/* media queries de flex - tablet */
+@media all and (max-width: 768px){
+	.section{
+		flex-direction: column;
+	}
+	.menu{
+		flex-direction: column;
+		height: auto;
+	}
+	.aside{
+		display: flex;
+		justify-content: center;
+	}
+	.articulos{
+		flex-direction: column;
+	}
+}
+
+/* media queries de flex - dispositivos móviles */
+@media all and (max-width: 576px){
+	.aside{
+		flex-direction: column;
+	}
+}

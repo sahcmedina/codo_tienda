@@ -1,0 +1,19 @@
+# VER funciones anidadas: promesas o await async
+# usuario de pruebas: 11 / 11 (este socio estaba dado de baja)
+
+---------------------------------------------------------------------------------------------------------------------------------
+2023-12-07  ---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+
+# add DB.app_user_fcm_token: permite grabar el token_fcm de los dispositivos de los usuarios
+# mdf EndPoint users/login: 
+	debe devolver (0: no actualizo clave) o (1: si actualizo clave)
+	upd DB.usuario_: se agrega campo upd_pass_app FALTA EN LOCAL...............................
+# add EndPoint users/upd_pass: permite actualizar el pass del usuario socio
+	
+---------------------------------------------------------------------------------------------------------------------------------
+2023-12-06  --------------------------------------------------------------------------------------------------------------------- 
+---------------------------------------------------------------------------------------------------------------------------------
+
+npm install firebase-admin --save
+# se corrio en Servidor pero da error por la version de Node JS (13.14 en ServHORUS - 18 en Notebook) se volvio atras
