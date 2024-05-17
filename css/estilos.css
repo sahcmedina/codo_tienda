@@ -1,58 +1,75 @@
 *{
-	margin: 10px;
-	padding: 10px;
+	margin: 3px;
+	padding: 5px;
 	box-sizing: border-box; /* para que las cajas no se desborden */
+	background-repeat: no-repeat;
+ background-attachment: fixed;
+	background-image: url("../images/fondo5.jpg") 
 }
+
+p{
+    background: #efe7c1;
+} 
+
+i{
+    background: #efe7c1;
+} 
 
 .padre{
 	display: flex;
 	flex-flow: column nowrap; 
 }
 	.header{
-		background: #000;
+		/* background: #2bc8d6; */
 		display: flex;
 		flex-flow: column nowrap;
 	}
 		.menu{
-			background: #2d4059;
+			/* background: #fefefe; */
 			display: flex;
 			flex-flow: row nowrap; /* se muestra en una misma linea */
 			height: 100px;
 			align-items: center;
 		}
 			.logo{
-				/* background: #ea5455; */
-				/* flex: 1 1 auto; */
-				/* height: 50px; */
+				/* background: #fefefe; */
+				 flex: 1 1 auto; 
+				/* height: 20px;  */
 			}		
 			.nav{
-				background: #ea5455;
+				/* background: #fefefe; */
 				flex: 1 1 auto;
-				height: 50px;
-			}
+				height: 20px;
+			}			
 			.social{
-				background: #ea5455;
+				/* background: #fefefe; */
 				flex: 1 1 auto;
-				height: 50px;
+				height: 20px;
 			}
 		.texto-principal{
-			background: #f07b3f;
+			background: #ffea85;	
+			margin: 1px;
+			padding: 1px;
+		
+			/* height: 96px; */
 		}
 			h1{
-				background: #ffd460;
+				background: #ffea85;
 			}
 	.section{
-		background: #000;
+		/* background: #fefefe; */
 		display: flex;
 	}
 		.articulos{
-			background: #4e4e6a;
+			background: #fefefe;   /* OK */  
+			 /*  #4e4e6a; */
 			flex: 2 1 auto;
 			display: flex; 
 			flex-flow: wrap /* cada articulo al lado del otro */
 		}
 			.article{
-				background: #1f6cb0;
+				background: #efe7c1;  /* OK */  
+				/* #1f6cb0; */
 				flex: 1 1 40%;
 			}
 			.navegacion{
@@ -60,20 +77,24 @@
 				flex: 1 1 100%;
 			}
 		.aside{
-			background: #f73f52;			
+			background: #fefefe; /*  #f73f52; */			
 			flex: 1 1 auto;
 		}
 			.publicidad{
-				background: #ffea85;
+				background: #efe7c1;   /*  #ffea85; */
 			}
 	.footer{
-		background: #000;
+		background: #ffea85;
 		display: flex;
 		justify-content: center;
 	}
 	.pie{
-		background: #e6af2e;
-		width: 300px;
+		/* background: #e6af2e; */
+		width: 600px;
+		background: #ffea85;
+
+		margin: 0px;
+		padding: 0px;
 	}
 
 /* media queries de flex - tablet */
