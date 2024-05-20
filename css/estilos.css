@@ -145,6 +145,7 @@ a{
 	.section{
 		/* background: #fefefe; */
 		display: flex;
+		
 	}
 		.articulos{
 			background: #fefefe;   
@@ -180,7 +181,7 @@ a{
 		padding: 0px;
 	} */
 
-/* media queries de flex - tablet */
+/* media queries de flex - tablet 768 */
 @media all and (max-width: 768px){
 	.section{
 		flex-direction: column;

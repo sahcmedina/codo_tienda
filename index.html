@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title> Tienda de calzados </title>
-  <!-- viewport: metaetiqueta HTML5 que controla el ancho de una página web en función del dispositivo del usuario. -->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximun-scale=1.0, minimum_scale=1.0" > 
+  <meta name="viewport" content="width=device-width" > 
   <link rel="stylesheet" href="./css/estilos.css" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
-  <link rel="icon" type="image/png" href="./images/favicon.ico"/>
+  <link rel="icon" type="image/vnd.icon" href="./images/favicon.ico"/>
 
 </head>
   
@@ -20,7 +19,7 @@
       <div class="menu">
 
         <div class="logo">     
-          <img src="./images/logo.png" height="120" width="120" > 
+          <img src="./images/logo.png" height="120" width="120" alt="logo de la empresa"> 
         </div>
       
         <div class="nav"> 
@@ -39,38 +38,46 @@
 
     </header>
 
-    <section class="section"> 
+	<div >
 
+    <section class="section"> 
+	<h5>Lo que buscas lo tenemos..</h5>
+	
         <div class="articulos">
 
-          <article class="article">            
-            <a href="./hombres.html" title="Ir a la sección HOMBRE"><img src="./images/portada_hombre.png" width="450px" height="250px" onmouseover="this.width=455;this.height=255;" onmouseout="this.width=450;this.height=250;"  alt="zapatillas para hombres"></a>
-            <p>Calzado Hombres 40% OFF </p>
+          <article class="article">   
+            <a href="./hombres.html" title="Ir a la sección HOMBRE"><img src="./images/portada_hombre.png" width="400" height="200" onmouseover="this.width=405;this.height=205;" onmouseout="this.width=400;this.height=200;"  alt="zapatillas para hombres"></a>
+            <h4>Calzado Hombres 40% OFF</h4>
+            <p>Al elegir calzado, los hombres suelen buscar comodidad, elegancia y distinción..</p>.
           </article>
           
-          <article class="article">                       
-            <a href="./mujeres.html" title="Ir a la sección MUJER"><img src="./images/portada_mujer.png" width="450px" height="250px" onmouseover="this.width=455;this.height=255;" onmouseout="this.width=450;this.height=250;" alt="zapatillas para hombres"></a>
-            <p>Calzado Mujeres en liquidación </p>
+          <article class="article" title="Calzado Mujeres en liquidación">                       
+            <a href="./mujeres.html" title="Ir a la sección MUJER"><img src="./images/portada_mujer.png" width="400" height="200" onmouseover="this.width=405;this.height=205;" onmouseout="this.width=400;this.height=200;" alt="zapatillas para hombres"></a>
+            <h4>Calzado Mujeres en liquidación</h4>
+            <p> Las mujeres buscan en los zapatos comodidad, estilo, y poder...</p>
           </article>
           
-          <article class="article">                        
-            <a href="./unicos.html" title="Ir a la sección PARES UNICOS"><img src="./images/portada_hombre.png" width="450px" height="250px" onmouseover="this.width=455;this.height=255;" onmouseout="this.width=450;this.height=250;" alt="zapatillas para hombres"></a>
-            <p>Pares unicos</p>
+          <article class="article" title="Pares unicos">                        
+            <a href="./unicos.html" title="Ir a la sección PARES UNICOS"><img src="./images/portada_hombre.png" width="400" height="200" onmouseover="this.width=405;this.height=205;" onmouseout="this.width=400;this.height=200;" alt="zapatillas para hombres"></a>
+            <h4>Pares unicos</h4>
+            <p>No te podes perder esta oportunidad...</p>
           </article>
           
-          <article class="article">                        
-            <a href="./dos_x_uno.html" title="Ir a la sección 2 x 1"><img src="./images/portada_ninios.png" width="450px" height="250px" onmouseover="this.width=455;this.height=255;" onmouseout="this.width=450;this.height=250;" alt="zapatillas para hombres"></a>
-            <p>Calzado Niños 2 x 1</p>
+          <article class="article" title="Calzado Niños 2 x 1">                        
+            <a href="./dos_x_uno.html" title="Ir a la sección 2 x 1"><img src="./images/portada_ninios.png" width="400" height="200" onmouseover="this.width=405;this.height=205;" onmouseout="this.width=400;this.height=200;" alt="zapatillas para hombres"></a>
+            <h4>Calzado Niños 2 x 1</h4>
+            <p>El calzado infantil es importante para proteger los pies de los niños en constante crecimiento...</p>
           </article>
 
           <nav class="navegacion"></nav>
+          
         </div>
 
         <aside class="aside">
 
           <div class="publicidad">
             <p>Los pies te llevan a soñar..</p>
-            <iframe width="360" height="180" src="https://www.youtube.com/embed/U3Y7Z42qhlQ?si=iwU4zNEH9oallaMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+            <iframe width="360" height="180" src="https://www.youtube.com/embed/U3Y7Z42qhlQ?si=iwU4zNEH9oallaMk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
           </div>
 
           <div class="publicidad">
@@ -80,13 +87,15 @@
           
           <div class="publicidad">
             <p>Tus zapatillas marcan tu ritmo..</p>
-            <iframe width="360" height="180" src="https://www.youtube.com/embed/SaMG5cM5ORk?si=XQBV58wgqCv_6CxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="360" height="180" src="https://www.youtube.com/embed/SaMG5cM5ORk?si=XQBV58wgqCv_6CxN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
         </aside>
 
     </section>
 
+	</div>
+	
     <footer class="footer">
       acercate por nuestras sucursales: <a href="./contacto.html" title="ir a la pagina de sucrusales"><i class="fas fa-home fa-icon"></i></a>
       escribinos: <a href="./contacto.html" title="ir a la pagina de contacto"><i class="fas fa-envelope fa-icon"></i></a>

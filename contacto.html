@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title> Tienda de ropa </title>
-  <!-- viewport: metaetiqueta HTML5 que controla el ancho de una página web en función del dispositivo del usuario. -->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximun-scale=1.0, minimum_scale=1.0" > 
+  <meta name="viewport" content="width=device-width" > 
   <link rel="stylesheet" href="./css/estilos.css" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
-  <link rel="icon" type="image/png" href="./images/favicon.ico"/>
+  <link rel="icon" type="image/vnd.icon" href="./images/favicon.ico"/>
 </head>
   
 <body>
@@ -18,7 +17,7 @@
       <div class="menu">
 
         <div class="logo">     
-          <img src="./images/logo.png" height="120" width="120" >  
+          <img src="./images/logo.png" alt="logo de la empresa" height="120" width="120" >  
         </div>
 
         <div class="nav"> 
@@ -38,26 +37,25 @@
       <div class="contenedorBeish">
         <h3>Comunicate con nosotros:</h3>
 
-        <table>
         <div class="contact_form"></div>
         <div class="formulario">			
           
           <form action="formulario.php" method="post">				
             <p>
               <label for="nombre">Nombre <span class="obligatorio">*</span></label>
-                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                <input type="text" name="nombre" id="nombre" required="required" placeholder="Escribe tu nombre">
               <label for="email" class="Email">Email <span class="obligatorio">*</span></label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                  <input type="email" name="email" id="email" required="required" placeholder="Escribe tu Email">
             </p>          
 
             <p>
-              <label for="nombre" class="Preferencia">Preferencias: <span class="obligatorio">*</span></label>
-                <input type="checkbox" id="Preferencia" value="value1" /> 2 x 1
-                <input type="checkbox" id="Preferencia" value="value1" /> Promos
+              <label for="nombre" >Preferencias: <span class="obligatorio">*</span></label>
+                <input type="checkbox" id="cbox1" value="val1" /> 2 x 1
+                <input type="checkbox" id="cbox2" value="val2" /> Promos
             </p>
 
             <p>
-              <label for="nombre" class="Nombre">Provincia <span class="obligatorio">*</span></label>
+              <label for="nombre" >Provincia <span class="obligatorio">*</span></label>
               <select name="select">
                 <option value="1">BUENOS AIRES</option>
                 <option value="2">CATAMARCA</option>
@@ -88,7 +86,7 @@
 
             <p>
               <label for="mensaje" class="colocar_mensaje">Mensaje <span class="obligatorio">*</span></label>                     
-                  <textarea name="introducir_mensaje"  id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                  <textarea name="mensaje"  id="mensaje" required="required" placeholder="Deja aquí tu comentario..."></textarea> 
             </p>	
             
             <p>
@@ -96,12 +94,10 @@
             </p>
 
             
-            <center><button type="submit" name="enviar_formulario" id="enviar" title="Haga clic para enviar los datos a la tienda">Enviar</button></center>
+            <button type="submit" name="enviar_formulario" id="enviar" title="Haga clic para enviar los datos a la tienda">Enviar</button>
           </form>
   
         </div>
-
-        </table>
       </div>
 
     </header>
