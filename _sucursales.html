@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title> Sistema - Sucursales </title> 
+  <meta name="viewport" content="width=device-width" > 
+  <link rel="stylesheet" href="./css/estilos.css" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+  <link rel="icon" type="image/vnd.icon" href="./images/favicon.ico"/>
+
+</head>
+  
+<body>
+  
+  <div class="padre">
+    
+    <header class="header">
+
+		<div class="menu">
+			<div class="logo"><a href="./index.html" title="Ir a la tienda"><img src="./images/logo.png" height="120" width="120" alt="logo de la tienda"></a></div>      
+			<div class="nav"><h2><a href="./_zapatillas.html" title="Administración de zapatillas"> Zapatillas </a></h2></div>      
+			<div class="nav"><h2><a href="./_sucursales.html" title="Administración de Sucursales"> Sucursales </a></h2></div>      
+			<div class="nav"><h2><a href="./_ventas.html"     title="Administración de Ventas">     Ventas     </a></h2></div>      
+		</div>
+
+      <div class="texto-principal">
+        <h1>Sistema</h1>
+      </div>
+
+    </header>
+
+	<div >
+
+	    <section class="section"> 
+		<h3>Administración de Sucursales</h3>
+	    </section>
+	    
+	    <!-- Crear  -->
+		<center>
+			<p><b>Crear </b></p>
+			<form id="form-crear-sucursal">
+			<TABLE BORDER WIDTH="60%">
+				<TR>	<TH>Provincia</TH> <TH>Dirección</TH>  <TH>Acción</TH>  </TR>
+				<TR>	<TD align="center"><input type="text" name="provincia" id="nuevo-provincia" required></TD> 
+						<TD align="center"><input type="text" name="direccion" id="nuevo-direccion" required></TD> 
+						<TD align="center"><button type="submit"> Crear </button></TD>
+				</TR>
+			</TABLE>
+			</form>
+		</center> 
+	
+	<br>
+	
+	<!--  Mostrar Sucursales -->
+	<center>
+	  <p><b> Lista </b></p>
+		<table border WIDTH="60%">
+		<thead>
+			<tr>
+			   <th>Provincia</th>
+			   <th>Direccion</th>
+			   <th>Acciones</th> 
+			</tr>
+		</thead>
+		<tbody id="body-tabla-sucursales">
+	
+		<!--  Aca se agregaran las Sucursales -->
+		</tbody>
+	  </table>
+	</center>
+
+	</div>
+	
+	<!--   cargar el CDN de Axios -->
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<!-- cargar el script principal -->
+	<script src="./_sucursales.js"></script>
+	
+    <footer class="footer">
+      volver a la tienda: <a href="./index.html" title="ir a la web"><i class="fas fa-home fa-icon"></i></a>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
+
